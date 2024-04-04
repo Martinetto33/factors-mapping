@@ -1,25 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FactorsMapping
+﻿namespace FactorsMapping
 {
-    internal class Program
+    internal static class Program
     {
-        static List<KeyValuePair<int, string>> _mappingsList = new List<KeyValuePair<int, string>>();
+        static List<KeyValuePair<int, string>> _mappingsList = new();
 
         private static void Initialize()
         {
-            SortedDictionary<int, string> mappings = new SortedDictionary<int, string>();
-            mappings.Add(3, "hippo");
-            mappings.Add(4, "potamo");
-            mappings.Add(12, "hippopotamo");
-            mappings.Add(7, "super");
-            mappings.Add(84, "superhippopotamo");
-            mappings.Add(21, "superhippo");
-            mappings.Add(28, "superpotamo");
+            SortedDictionary<int, string> mappings = new SortedDictionary<int, string>
+            {
+                { 3, "hippo" },
+                { 4, "potamo" },
+                { 12, "hippopotamo" },
+                { 7, "super" },
+                { 84, "superhippopotamo" },
+                { 21, "superhippo" },
+                { 28, "superpotamo" }
+            };
             foreach (var elem in mappings.OrderByDescending(entry => entry.Key))
             {
                 Console.WriteLine(elem);

@@ -1,6 +1,3 @@
-using FactorsMapping;
-using System.Collections.Immutable;
-
 namespace TestFactorPrinters
 {
     [TestClass]
@@ -28,7 +25,7 @@ namespace TestFactorPrinters
         [TestMethod]
         public void TestSingleFactorPrinter()
         {
-            UtilityTestPrinter testPrinter = new UtilityTestPrinter();
+            UtilityTestPrinter testPrinter = new();
             /* Per il numero 3 viene restituito "hippo". */
             Assert.AreEqual("hippo", testPrinter.GetFactorsAsSinglePrinterString(3, _mappingsList));
             Assert.AreEqual("potamo", testPrinter.GetFactorsAsSinglePrinterString(4, _mappingsList));
@@ -40,7 +37,7 @@ namespace TestFactorPrinters
         [TestMethod]
         public void TestMultipleFactorPrinter()
         {
-            UtilityTestPrinter testPrinter = new UtilityTestPrinter();
+            UtilityTestPrinter testPrinter = new();
             /* Per il numero 3 viene restituito "hippo". */
             Assert.AreEqual("hippo", testPrinter.GetFactorsAsMultiplePrinterString(3, _mappingsList));
             Assert.AreEqual("potamo", testPrinter.GetFactorsAsMultiplePrinterString(4, _mappingsList));

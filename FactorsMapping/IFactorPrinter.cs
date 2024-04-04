@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FactorsMapping
+﻿namespace FactorsMapping
 {
     /// <summary>
     /// Un'interfaccia che modella un oggetto in grado di stampare tutti i numeri

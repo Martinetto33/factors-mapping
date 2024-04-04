@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FactorsMapping
+﻿namespace FactorsMapping
 {
     /// <summary>
     /// Una classe che stampa una sola delle mappature esistenti se un numero

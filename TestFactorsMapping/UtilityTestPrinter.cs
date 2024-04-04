@@ -21,7 +21,7 @@ namespace TestFactorPrinters
         /// <returns></returns>
         public string GetFactorsAsSinglePrinterString(int currentIndex, List<KeyValuePair<int, string>> mappingsList)
         {
-            StringBuilder builder = new StringBuilder();
+            StringBuilder builder = new();
             bool alreadyPrinted = false;
             foreach (var mapping in mappingsList)
             {
@@ -48,7 +48,7 @@ namespace TestFactorPrinters
         /// <returns></returns>
         public string GetFactorsAsMultiplePrinterString(int currentIndex, List<KeyValuePair<int, string>> mappingsList)
         {
-            StringBuilder builder = new StringBuilder();
+            StringBuilder builder = new();
             bool alreadyPrinted = false;
             foreach (var mapping in mappingsList)
             {
